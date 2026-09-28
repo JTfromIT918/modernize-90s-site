@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A modernized version of a classic 1990s website."
+    >
+
+    <title>My Modern Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+
+            <h1>Welcome to My Modern Website!</h1>
+
+            <p class="tagline">
+                The web has come a long way since 1999.
+            </p>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="home">
+
+        <section
+            class="content-card"
+            aria-labelledby="welcome-heading"
+        >
+
+            <h2 id="welcome-heading">
+                Welcome to my website!
+            </h2>
+
+            <p class="intro">
+                This website has been redesigned using modern HTML5,
+                CSS, and JavaScript techniques to create a cleaner,
+                more accessible experience.
+            </p>
+
+            <div class="highlight-message">
+                Goodbye blinking text, nested tables, and eye-searing
+                colors. Hello modern web design!
+            </div>
+
+            <div class="featured-content">
+
+                <div class="image-container">
+                    <img
+                        src="placeholder.png"
+                        alt="Illustration of a skateboarder performing a trick"
+                    >
+                </div>
+
+                <div id="about" class="featured-text">
+
+                    <h3>Welcome to the future</h3>
+
+                    <p>
+                        Modern websites use semantic HTML, responsive
+                        layouts, accessible controls, and CSS to
+                        separate presentation from content.
+                    </p>
+
+                    <p>
+                        Flexible layouts allow this page to adapt to
+                        everything from smartphones to large desktop
+                        displays without relying on fixed-width tables.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p class="welcome-message">
+                Welcome to the modern World Wide Web!
+            </p>
+
+        </section>
+
+        <section
+            id="contact"
+            class="content-card newsletter-section"
+            aria-labelledby="newsletter-heading"
+        >
+
+            <h2 id="newsletter-heading">
+                Join Our Newsletter
+            </h2>
+
+            <p>
+                Enter your information below to receive updates from
+                our totally modern website.
+            </p>
+
+            <form
+                id="newsletter-form"
+                class="newsletter-form"
+            >
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <div class="checkbox-group">
+
+                    <input
+                        type="checkbox"
+                        id="promotions"
+                        name="promotions"
+                    >
+
+                    <label for="promotions">
+                        I would like to receive promotional updates.
+                    </label>
+
+                </div>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+                <p
+                    id="form-message"
+                    class="form-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; <span id="current-year"></span>
+            My Awesome Website
+        </p>
+
+        <p class="footer-note">
+            Designed for modern browsers, screens, and humans.
+        </p>
+
+    </footer>
+
+</body>
+</html>
